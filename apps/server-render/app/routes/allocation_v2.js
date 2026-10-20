@@ -35,6 +35,8 @@ function AllocationsHandler2(db) {
 
     const allocationsDAO = new AllocationsDAO(db);
 
+    const allocationsDAO2 = new AllocationsDAO2(db);
+
     this.displayAllocations = (req, res, next) => {
         /*
         // Fix for A4 Insecure DOR -  take user id from session instead of from URL param
